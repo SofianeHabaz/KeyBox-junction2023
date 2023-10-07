@@ -9,6 +9,20 @@ class ChatBot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: blue,
+        toolbarHeight: 64,
+        elevation: 0,
+        title: Text(
+          'KEYBOX',
+          style: GoogleFonts.magra(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Column(

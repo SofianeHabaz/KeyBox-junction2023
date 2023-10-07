@@ -34,9 +34,8 @@ class MyApp extends StatelessWidget {
         home: const HomePage(),
         localizationsDelegates: [GlobalMaterialLocalizations.delegate],
         supportedLocales: [const Locale('en'), const Locale('fr')],
-        initialRoute: '/splash',
+        initialRoute: '/login',
         routes: {
-          '/slash': (context) => SplashScreen(),
           '/login': (context) => LoginPage(),
           '/signup': (context) => SignUpPage(),
           '/trainerDetails': (context) => TrainerDetails(),

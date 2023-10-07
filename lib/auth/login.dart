@@ -152,10 +152,12 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(height: 40),
                       TextButton(
                         onPressed: () {
+                          Navigator.pushReplacementNamed(context, '/');
+                          Navigator.pop(context);
                           if (formKey.currentState!.validate()) {
-                            Navigator.pushReplacementNamed(context, '/');
+                            print('just for testing purpose');
                           } else {
-                            Navigator.pushReplacementNamed(context, '/');
+                            print("Not Validated");
                           }
                         },
                         child: Text(

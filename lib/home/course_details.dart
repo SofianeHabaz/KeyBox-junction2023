@@ -32,7 +32,7 @@ class HomeCourseDetails extends StatelessWidget {
         toolbarHeight: 64,
         elevation: 0,
         title: Text(
-          'KEY',
+          'KEYBOX',
           style: GoogleFonts.magra(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         leading: IconButton(
